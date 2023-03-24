@@ -1,0 +1,26 @@
+[
+    {
+        "imagen": "http://www.alselectro.com/images/Image-8_29mdj022.jpg",
+        "nombre": "Aquarium Hydroponic PH0-14 controller meter sensor",
+        "precio": 95,
+        "referencia": "PH0-14",
+        "salida": "Numérico (0 – 14)",
+        "variable": "PH"
+    },
+    {
+        "imagen": "https://www.geekfactory.mx/wp-content/uploads/2013/06/ds18b20-sensor-de-temperatura-sumergible.jpg",
+        "nombre": "Sensor Digital De Temperatura DS18B20 Impermeable",
+        "precio": 13,
+        "referencia": "DS18B20",
+        "salida": "Numérico (Centígrados Fahrenheit)",
+        "variable": "Temperatura"
+    },
+    {
+        "imagen": "https://images-na.ssl-images-amazon.com/images/I/31QUuaYsGbL._AC_.jpg",
+        "nombre": "FC28 soil hygrometer humidity sensor",
+        "precio": 7,
+        "referencia": "FC28",
+        "salida": "Numérico (% agua por volumen de tierra)",
+        "variable": "Humedad Tierra"
+    }
+]

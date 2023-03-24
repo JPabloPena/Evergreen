@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+<head><title>Falsk Client</title></head>
+
+ <body>
+    <h1>Lista de Sensores</h1>
+    <ul>
+        {% for item in variable %}
+        <li>
+            <b>Referencia</b>: {{item.referencia}}<br>
+            <b>Nombre</b>: {{item.nombre}}<br>
+            <b>Precio</b>: {{item.precio}}<br><br>
+        </li>
+        {% endfor %}
+    </ul>
+ </body>
+ </html>
