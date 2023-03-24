@@ -14,4 +14,4 @@ def postOne():
     body = request.json
     return (TipoAplicacion.create(body))
 
-app.run(host='0.0.0.0',port=5001)
+# app.run(host='0.0.0.0',port=5001)
