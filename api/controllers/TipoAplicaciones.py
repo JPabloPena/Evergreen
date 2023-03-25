@@ -2,11 +2,12 @@ from flask import jsonify, request
 from db.db import cnx
 
 class TipoAplicacion():
-    global cur
-    cur = cnx.cursor()
+    #global cur
+    #cur = cnx.cursor()
 
     def list():
         lista = []
+        cur = cnx.cursor()
         cur.execute("SELECT * FROM tipo_aplicaciones")
         rows = cur.fetchall()
         columns = [i[0] for i in cur.description]
@@ -23,6 +24,7 @@ class TipoAplicacion():
     def create(body):
         # Campos
         data = (body['nombre'],body['puerto'],body['estado'],body['tipo'],body['lenguaje'])
+        cur = cnx.cursor()
         # Sentencia SQL
         sql = "INSERT INTO tipo_aplicaciones(nombre, puerto, estado, tipo, lenguaje) VALUES(%s, %s, %s, %s, %s)"
         cur.execute(sql,data)
